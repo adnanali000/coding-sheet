@@ -151,6 +151,28 @@ console.log('result: '+find);
 
 //-------------arrays and object
 
+// let arr = [7,10,5,'pakistan',undefined];
+// console.log(arr);
+// console.log(arr[3]);
+// console.log(arr.length);
+// let newarr = arr.sort();
+// newarr.push('islamabad')
+// console.log(newarr);
+// let empArr = new Array(10);
+// console.log(empArr);
+
+
+
+
+// let empObj = {
+//     name: 'Adnan',
+//     language: 'javascript',
+//     experience: '3 years',
+//     "company name":'amazon'
+// }
+// console.log(empObj);
+// console.log(empObj.name);
+// console.log(empObj['company name']);
 
 
 
