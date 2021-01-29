@@ -54,6 +54,7 @@
 
 //--------string function
 
+/*
 var str = 'Hello this is my world';
 console.log(str);
 //index of : to find the index of first occurence of substring
@@ -101,4 +102,76 @@ console.log("result: "+str[3]);
 //find character code
 find = str.charCodeAt(3);
 console.log('result: '+find);
+*/
+
+//------------scope if else and switch
+
+// var num = 5;
+// console.log(num);
+// let x = 10;
+// {
+//     let x = 5
+//     console.log(x); //5
+// }
+// console.log(x); //10
+
+// const val = 'This cannot be change';
+// // val = 'This can be change ?' //error
+// console.log(val);
+
+
+// let score = 80;
+// if(score > 80){
+//     console.log('grade A');
+// }
+// else if(score == 80){
+//     console.log('grade B+');
+// }
+// else{
+//     console.log('grade B');
+// }
+
+
+// let age = 20;
+// switch (age){
+//     case 18:
+//         console.log('not eligible');
+//         break;
+//     case 20:
+//         console.log('eligible');
+//         break;
+//     case 21:
+//         console.log('not eligible');
+//         break;            
+//     default:
+//         console.log('age 20 is required');
+//         break;    
+// }
+
+
+//-------------arrays and object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
