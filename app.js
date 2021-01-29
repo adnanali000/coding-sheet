@@ -162,8 +162,6 @@ console.log('result: '+find);
 // console.log(empArr);
 
 
-
-
 // let empObj = {
 //     name: 'Adnan',
 //     language: 'javascript',
@@ -175,14 +173,25 @@ console.log('result: '+find);
 // console.log(empObj['company name']);
 
 
+//------------function
+
+function greeting(name,greetText = 'morning from javascript'){
+    console.log(greetText+' '+name);
+}
+greetText = 'good evening';
+name = 'adnan';
+name2 = 'imran';
+name3 = 'elan musk';
+greeting(name,greetText)
+greeting(name2,greetText)
+greeting(name3)
 
 
-
-
-
-
-
-
+function sum(a,b){
+    let c = a+b;
+    return c;
+}
+console.log(sum(2,6));
 
 
 
