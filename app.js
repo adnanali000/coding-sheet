@@ -276,3 +276,29 @@ do{
     i++;
 }while(i < 5);
 */
+
+//manipulating dom
+
+let main = document.getElementById('main');
+console.log(main);
+let nav = document.getElementById('nav').innerHTML = '<li>NEW TEXT</li> <li>Hello World</li>';
+console.log(nav);
+
+let container = document.getElementsByClassName('container');
+console.log(container);
+
+//using css selectors
+let firstCon = document.querySelector('.container');
+console.log(firstCon);
+let navId = document.querySelector('#nav');
+console.log(navId);
+
+//first child
+let navData = document.querySelector('#nav > li').innerHTML;
+console.log(navData);
+
+
+//all selectors of same
+let allLi = document.querySelectorAll('#nav > li');
+console.log('selector return ',allLi);
+
