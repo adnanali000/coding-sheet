@@ -175,6 +175,7 @@ console.log('result: '+find);
 
 //------------function
 
+/*
 function greeting(name,greetText = 'morning from javascript'){
     console.log(greetText+' '+name);
 }
@@ -192,8 +193,23 @@ function sum(a,b){
     return c;
 }
 console.log(sum(2,6));
+*/
 
+// ----------------Alert, Prompt, Confirm
 
+// alert('hello world');
+
+// let age = prompt('enter your age',20);
+// console.log('age is: '+age);
+
+// let deletePost = confirm('do you really want to delete this post?');
+// console.log(deletePost);
+
+// if(deletePost){
+//     console.log('your post has been deleted');
+// }else{
+//     console.log('your post has not been deleted');
+// }
 
 
 
