@@ -279,6 +279,7 @@ do{
 
 //manipulating dom
 
+/*
 let main = document.getElementById('main');
 console.log(main);
 let nav = document.getElementById('nav').innerHTML = '<li>NEW TEXT</li> <li>Hello World</li>';
@@ -301,4 +302,33 @@ console.log(navData);
 //all selectors of same
 let allLi = document.querySelectorAll('#nav > li');
 console.log('selector return ',allLi);
+*/
 
+//event listener
+let para = document.getElementById('para');
+let btn = document.getElementById('btn');
+
+para.addEventListener('mouseover',function run(){
+    console.log('mouse on para');
+})
+para.addEventListener('mouseout',function run(){
+    console.log('mouse out para');
+})
+btn.addEventListener('click',function run(){
+    if(para.style.display != 'none'){
+        para.style.display = 'none';
+    }else{
+        para.style.display = 'block';
+    }
+})
+
+
+
+// function toggleHide(){
+//     if(para.style.display != 'none'){
+//         para.style.display = 'none'
+//     }
+//     else{
+//         para.style.display = 'block';
+//     }
+// }
