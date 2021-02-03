@@ -212,13 +212,67 @@ console.log(sum(2,6));
 // }
 
 
+// --------for while do while forEeach
+
+//for loop
+
+/*
+let i=0;
+for(i=0; i<3; i++){
+    console.log(i);
+}
 
 
+for (let index = 0; index < fruits.length; index++) {
+    console.log('fruits avaialble: '+fruits[index]); 
+    
+}
+*/
 
+// foreach 
+/*
+fruits.forEach(function f(elements){
+})
+*/
 
+//for of
 
+/*
+let fruits = ['apple','mangoe','banana','orange'];
+for(elements of fruits){
+    console.log('fruits available: '+elements);
+}
+*/
 
+//to iterate the object we use for in loop
+//for in
 
+/*
+let students = {
+    name:'adnan',
+    age:'21',
+    degree:'BSCS'
+}
 
+for(key in students){
+    console.log(`The ${key} of employe is ${students[key]}`);
+}
+*/
 
+//while loop
 
+/*
+let i = 0;
+while(i < 5){
+    console.log(`${i} is less than 5`);
+    i++;
+}
+*/
+/*
+
+let i = 0;
+do{
+    console.log(`${i} is less than 5`);
+    i++;
+}while(i < 5);
+*/
