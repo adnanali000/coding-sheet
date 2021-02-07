@@ -401,35 +401,78 @@ btn.addEventListener('click',function run(){
 
 // newDate(year,month,date,hour,minutes,second,millisecond)
 
-let newDate = new Date(2021,1,8,9,4,3,19);
-console.log(newDate);
+// let newDate = new Date(2021,1,8,9,4,3,19);
+// console.log(newDate);
 
-let yr = newDate.getFullYear();
-console.log('full year is '+yr);
+// let yr = newDate.getFullYear();
+// console.log('full year is '+yr);
 
-let month = newDate.getMonth();
-console.log('month: '+month);
+// let month = newDate.getMonth();
+// console.log('month: '+month);
 
-let date = newDate.getDay();
-console.log('date: '+date);
+// let date = newDate.getDay();
+// console.log('date: '+date);
 
-newDate.setDate(5);
-console.log(newDate);
+// newDate.setDate(5);
+// console.log(newDate);
 
-function updateTime(){
-    document.getElementById('current').innerHTML = new Date();
+// function updateTime(){
+//     document.getElementById('current').innerHTML = new Date();
 
+// }
+// setTimeout(updateTime,1000)
+
+
+                                //ARROW FUNCTION
+
+// normal function
+function greet(){
+    console.log('hello world');
 }
-setTimeout(updateTime,1000)
+greet();
+
+//arrow function
+
+morningGreet = ()=>{
+    console.log('good morning');
+}
+morningGreet();
+
+setTimeout(()=>{
+    console.log('set timout run');
+
+},3000)
 
 
+let sum = (a,b)=>{
+    return a+b;
+}
+console.log(sum(10,5))
+
+//more short for single return
+
+let sum2 = (a,b)=> a-b;
+console.log(sum2(10,5));  
+
+//more short for single argument
+let half = a => a/2;
+
+console.log(half(10));
 
 
+let greet2 = ()=>console.log('hello world');
+greet2();
 
+//arrow function can deal with parent 'this'
 
-
-
-
-
-
-
+let obj = {
+    greeting:'good morning',
+    names: ['adnan','faham','waseem','suffyan'],
+    greet(){
+        this.names.forEach((friend)=>{
+            console.log(this.greeting+' '+friend);
+        })
+    }
+}
+console.log(obj.names); 
+obj.greet();
