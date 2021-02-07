@@ -480,6 +480,7 @@ obj.greet();
 */
 
                                 //math object
+/*
                                 
 //maths objects
 let m = Math;
@@ -527,3 +528,9 @@ let num2 = 100;
 let ran1_100 = num1+(num2-num1)*Math.random();
 let round1_100 = Math.round(ran1_100);
 console.log('The random number between 1 and 100 is: '+round1_100);
+
+*/
+
+                            //JSON
+console.log('JSON');
+                            
