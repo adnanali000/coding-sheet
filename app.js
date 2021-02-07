@@ -425,6 +425,7 @@ btn.addEventListener('click',function run(){
 
                                 //ARROW FUNCTION
 
+                                /*
 // normal function
 function greet(){
     console.log('hello world');
@@ -476,3 +477,53 @@ let obj = {
 }
 console.log(obj.names); 
 obj.greet();
+*/
+
+                                //math object
+                                
+//maths objects
+let m = Math;
+console.log(m);
+
+//constraint from math object
+
+console.log('The value of Math.E is'+Math.E);
+console.log('The value of Math.pi is'+Math.PI);
+console.log('The value of Math.ln2 is'+Math.LN2);
+console.log('The value of Math.sqrt1_2 is'+Math.SQRT1_2);
+
+//function from math object
+console.log('Round function: '+Math.round(34.6785)); //35
+console.log('Round function: '+Math.round(34.3785)); //34
+
+console.log('4 raise to power 2: '+Math.pow(4,2));
+console.log('4 raise to power 7: '+Math.pow(4,7));
+
+console.log('square root of 36 is: '+ Math.sqrt(36));
+console.log('square root of 45 is: '+ Math.sqrt(45));
+
+console.log('ciel add up the nearest one while rounding the number: '+ Math.ceil(4.2)); //5
+console.log('floor down the nearest one while rounding the number: '+ Math.floor(4.2)); //4
+
+console.log('absolute return the positive number: '+ Math.abs(-6.2)); //6.2
+
+
+//Trignometric functions
+console.log('value of sin(pi): '+ Math.sin(Math.PI/2));
+console.log('value of cos(pi): '+ Math.cos(Math.PI/2));
+console.log('value of tan(pi): '+ Math.tan(Math.PI/2));
+
+//minimum and maximum
+console.log('minimum value of 10,2,12: ',Math.min(10,2,12)); //2
+console.log('minimum value of 10,2,12: ',Math.max(10,2,12)); //12
+
+//random number
+let rand = Math.random();
+console.log('The random is '+rand);
+
+//random number between 1 and 100
+let num1 = 1;
+let num2 = 100;
+let ran1_100 = num1+(num2-num1)*Math.random();
+let round1_100 = Math.round(ran1_100);
+console.log('The random number between 1 and 100 is: '+round1_100);
