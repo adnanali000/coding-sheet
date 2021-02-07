@@ -392,6 +392,41 @@ btn.addEventListener('click',function run(){
 // setInterval(Nowtime,1000);
 
 
+                                     //DATE AND TIME
+// let date = new Date();
+// console.log(date);
+
+// let newDate = new Date('2021-02-02');
+// console.log(newDate);
+
+// newDate(year,month,date,hour,minutes,second,millisecond)
+
+let newDate = new Date(2021,1,8,9,4,3,19);
+console.log(newDate);
+
+let yr = newDate.getFullYear();
+console.log('full year is '+yr);
+
+let month = newDate.getMonth();
+console.log('month: '+month);
+
+let date = newDate.getDay();
+console.log('date: '+date);
+
+newDate.setDate(5);
+console.log(newDate);
+
+function updateTime(){
+    document.getElementById('current').innerHTML = new Date();
+
+}
+setTimeout(updateTime,1000)
+
+
+
+
+
+
 
 
 
