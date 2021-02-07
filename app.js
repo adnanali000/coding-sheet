@@ -305,6 +305,7 @@ console.log('selector return ',allLi);
 */
 
 //event listener
+/*
 let para = document.getElementById('para');
 let btn = document.getElementById('btn');
 
@@ -321,7 +322,7 @@ btn.addEventListener('click',function run(){
         para.style.display = 'block';
     }
 })
-
+*/
 
 
 // function toggleHide(){
@@ -332,3 +333,68 @@ btn.addEventListener('click',function run(){
 //         para.style.display = 'block';
 //     }
 // }
+
+//set interval and set timeout
+
+// set timeout: allow us to run a function once after the interval of time
+// clear timeout: allow us to run a function repeatedly after the interval of time
+
+// function greet(){
+//     console.log('hello world');
+// }
+
+// setTimeout(greet,3000);
+
+// function greet(employee){
+//     console.log('hello '+employee);
+// }
+
+// setTimeout(greet,3000,'stokes');
+
+
+
+// function greet(employee,salary){
+//     console.log('hello '+employee+' '+salary);
+// }
+
+// setTimeout(greet,3000,'stokes',' your salary is $500');
+
+// function signup(){
+//     console.log('signup');
+// }
+
+// let timeout = setTimeout(signup,5000);
+// console.log(timeout);
+
+// //set timout return timeout id and with the help of clear timeout we delete that id
+
+// clearTimeout(timeout)
+
+
+// setInterval(() => {
+//     console.log('hello world');
+// }, 1000);
+
+// function check(){
+//     console.log('checked');
+// }
+
+// let intervalID = setInterval(check,2000);
+// console.log(intervalID);
+// clearInterval(intervalID);
+
+
+// function Nowtime(){
+//     let time = new Date();
+//     document.getElementById('time').innerHTML = time
+// }
+
+// setInterval(Nowtime,1000);
+
+
+
+
+
+
+
+
