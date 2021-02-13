@@ -1,0 +1,1 @@
+hello universe this file is read by fs module
