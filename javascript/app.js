@@ -533,4 +533,25 @@ console.log('The random number between 1 and 100 is: '+round1_100);
 
                             //JSON
 console.log('JSON');
-                            
+
+let empObj = {
+    name:'cook',
+    age:25,
+    post: 'manager',
+    salary: 300000
+}
+
+console.log(empObj);
+
+let jsonObj_str = JSON.stringify(empObj);
+console.log(jsonObj_str);
+
+//replace json string value
+
+jsonObj_str = jsonObj_str.replace('cook','tim');
+console.log(jsonObj_str);
+
+//converting json string into json obj
+
+let newJsonObj = JSON.parse(jsonObj_str);
+console.log(newJsonObj);
