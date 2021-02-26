@@ -1,0 +1,18 @@
+//commands
+//insert data in mongo db 
+
+//'use' help us to make new database or use existing once
+use adnanMongo
+
+//inserting single object in database
+db.items.insertOne({name:'adnanMongo',age:21,learning:'mongodb'})
+
+//inserting multitple objects in database
+db.items.insertMany([{name:'samsumg',price:150000,released:2020},{name:'iphone 12 pro max',price:250000,released:2021},{name:'samsumg note10',price:100000,released:2021}])
+
+//to show data from database
+db.items.find()
+
+//to see all databases
+show dbs
+
