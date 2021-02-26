@@ -1,0 +1,35 @@
+//to see database collection
+show collections
+
+//to find data from db by providing some parameter.In this case it return all the data having price 250000
+//arguments known as filter object(search filter in document)
+db.items.find({price:250000})
+
+//complex filter i.e greater than , less than , equal to etc
+//this will return the object whose price is greater than and equal to 100000
+//$gte = >=
+
+db.items.find({price:{$gte:100000}})
+
+//$gt = >
+//this will return the object whose price is greater than 100000
+db.items.find({price:{$gt:100000}})
+
+//$lt = <
+db.items.find({price:{$lt:150000}})
+
+//AND operator(,).In this case it will return object having price > 100000 and released > 2020
+db.items.find({price:{$gt:10000},released{$gt:2020}})
+
+//OR operator({$or:[]})
+db.items.find({$or:[{price:{$lt:150000}},{released:{$gt:2020}}]})
+
+//to see only desire value. In this  case we only get the price value greater than 100000.
+db.items.find({price:{$gt:100000}},{price:1})
+
+//in this case we get price with released
+db.items.find({price:{$gt:100000}},{price:1,released:1})
+
+
+
+
