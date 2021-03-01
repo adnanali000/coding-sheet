@@ -1,0 +1,11 @@
+//deleting items from mongodb database
+
+//deleting single item from database
+//deleteOne delete the matching entry and will delete the first entry in case of multi document match
+db.items.deleteOne({released:2021})
+
+//delete multiple items of same argument
+db.items.deleteMany({released:2021})
+
+
+

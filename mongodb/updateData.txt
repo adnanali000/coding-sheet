@@ -1,0 +1,2 @@
+//to update single data
+db.items.updateOne({name:'samsung'},{$set:{price:200000}})
